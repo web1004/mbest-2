@@ -1,0 +1,1645 @@
+@import url(common.css);
+@import url(header_footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*사용한 웹폰트
+font-family: 'Radio Canada', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Bellota', cursive;
+font-family: 'Bebas Neue', cursive;
+*/
+
+
+
+
+
+.fixed_footer{ /* 푸터를 고정*/
+  position: relative;
+  z-index: 1000;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* *--------------1.Movies-------------------- */
+/* 섹션 */
+
+
+
+.movieVisual_in{
+  width: 100%;
+  height: 780px;
+ /* background-color:cadetblue; */
+}
+
+
+
+.bb1{ 
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 725px;
+ /*  background-color: gold; */
+  overflow: hidden;
+}
+
+.bb1 img{
+  width: 100%;
+  height: 100%;
+  filter: blur(10px) brightness(40%);
+  transform: scale(1.5);
+  
+
+  /* background-size:cover; */
+ 
+}
+
+
+.movieVisualBg{
+  width: 100%;
+  height: 650px;
+  /* background-color: rgb(35, 35, 35); <----원래 검정배경*/
+  background-size:cover;
+
+
+
+  
+ 
+}
+.bb2{
+  position: relative;
+  width: 1200px;
+  height: 650px;
+  margin: 0 auto;}
+
+
+.movieVisual{
+  width: 1200px;
+  height: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: cornflowerblue;
+
+  /* test */
+  position: absolute;
+  z-index: 200;
+}
+
+.movieVisual img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* 비주얼 밑 슬라이드배너 */
+.banner{  /*배너전체영역*/
+	position:relative;
+	width:1200px;
+	height:75px;
+  margin: 0 auto;
+	/* background:rgb(185, 122, 133); */
+  background:transparent;
+}
+
+.banner .ban{   /*슬라이드영역*/
+	width:1200px;
+	height:75px;
+	overflow:hidden;
+	background:transparent;
+}
+
+.banner .ban ul{
+	width:1800px;  /* 슬라이드 150*12 =1800 */
+	position:relative;
+	left:-150px;  	/* 슬라이드 가로수정시 같이수정 */
+}
+.banner .ban ul li{
+	float:left;
+	width:150px;  
+	height:75px;
+  position: relative;
+  overflow: hidden;
+}
+.banner ul li img{
+  width:100%;
+  height: 100%;
+  filter: blur(2px) brightness(50%);
+  transform: scale(1.05);
+  position: absolute;
+  
+}
+
+.banner ul li .mt{ /*mt=movie title */
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  color:rgba(255, 255, 255, 0.475);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/*좌우버튼*/
+.ban_btn{
+  width: 1200px;
+  height: 27px;
+  /* background-color: navy; */
+  background-color: transparent;
+  margin: 0 auto;
+  position: relative;
+}
+.ban_left{
+	position:absolute;
+	
+	cursor:pointer;
+}
+.ban_right{
+	position:absolute;
+  right: 0;
+	cursor:pointer;
+}
+.ban_btn span{
+	display:inline-block;
+	width:17px;
+	height:27px;	
+}
+.ban_btn .ban_left{background:url(../image/main-event-left_02.png) no-repeat;transition: all 0.1s;}
+.ban_btn .ban_right{background:url(../image/main-event-right_02.png) no-repeat;transition: all 0.1s;}
+.ban_btn .ban_left:hover{background:url(../image/main-event-left_01.png) no-repeat;}
+.ban_btn .ban_right:hover{background:url(../image/main-event-right_01.png) no-repeat;}
+
+
+/* stop/play */
+.playstop .stop2 { /* stop */
+	position: absolute;
+  right: 600px;
+  top:8px;
+	width: 8px;
+	height: 11px;
+	background: url(../image/btn_pause.png) no-repeat;
+}
+
+.playstop .play2 { /* play */
+	position: absolute;
+	right: 600px;
+  top:8px;
+	width: 8px;
+	height: 11px;
+	background: url(../image/btn_play.png) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+/* ////////영화소개//////// */
+
+.moviePage{
+  width:1200px;
+  height: 1000px; 
+  margin: 40px auto;
+  /* background-color: crimson; */
+}
+
+.panel{
+	clear:both; 
+	color:rgb(48, 48, 48);
+	font-size:15px;
+	line-height:25px;
+}
+
+.panel li{
+  width: 1200px;
+  height: 1200px;
+  background-color:rgba(156, 186, 231, 0);
+}
+
+.panel li .mpTitle{ /* 영화제목 */
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.mpBox img{filter: grayscale(100%); transition: all 0.3s;}
+.mpBox img:hover{filter: grayscale(0%);}
+
+
+.panel li .mpBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.panel li .mpBox .mpPoster1 img{
+  width: 450px;
+  height: 700px;
+}
+
+
+.panel li .mpBox .mpGrid{
+  width: 750px;
+  height: 700px;
+ background-color: #4ebed4;
+}
+
+.panel li .mpBox .mpGrid .mpGridUp{
+  width: 750px;
+  height: 400px;
+  background-color: #d44ebe;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.panel li .mpBox .mpGrid .mpGridUp .mpAbout{
+  width: 484px;
+  height: 400px;
+  background-color: #212121;
+  color:whitesmoke;
+  padding:15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  
+}
+.panel li .mpBox .mpGrid .mpGridUp .mpPoster2 img{
+  width: 266px;
+  height: 400px;
+  /* background-color: gold; */
+}
+
+
+.panel li .mpBox .mpGrid .mpGridDown{
+  width: 750px;
+  height: 300px;
+  background-color: #d4984e;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel li .mpBox .mpGrid .mpGridDown .mpPoster3 img{
+  width: 240px;
+  height: 300px;
+  background-color: #7c7c7c;
+}
+
+.panel li .mpBox .mpGrid .mpGridDown .mpPoster4 img{
+  width: 510px;
+  height: 300px;
+  background-color: #323232;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.movieBox{ /* 섹션-푸터 사이빈공간 */
+  width:1200px;
+  height: 50px;
+  margin: 900px auto 0;
+  background-color: transparent;
+}
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* *--------------2.TV Shows-------------------- */
+
+
+
+
+#tabmenu{
+width:1200px;
+margin:0px auto;
+text-align:center;
+position: relative;
+cursor: pointer;
+}
+
+#tabmenu .blackTitle{
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(10, 10, 10, 0.791);
+  color:whitesmoke;
+  font-size: 30px;
+  position: absolute;
+  top:600px;
+  left: 0;
+  z-index: 9999;
+}
+
+
+.tab{display:inline-block; margin-top: 100px;}
+.tab li{
+float:left;
+display:block;
+width:400px;
+height:40px;
+border:1px solid #c6c6c6;
+font-size:20px;
+color:#272727;
+background-color: #f5f5f5;
+font-family: 'Merriweather', serif;
+font-weight:400;
+text-align:center;
+line-height:40px;
+box-sizing: border-box;
+transition: all 1s;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+
+
+.tab li.selected{  /*현재 선택된 탭메뉴*/
+background:#272727;
+color:#f5f5f5;
+border:1px solid #928676;
+font-weight:700;
+width:800px;
+box-sizing: border-box;
+transition: all 1s;
+}
+
+.panel2{
+clear:both;  /*float문제해결*/
+color:#fff;
+font-size:14px;
+line-height:25px;
+padding-bottom:100px;
+}
+
+
+
+.gallery{ 
+width:1200px;
+height:80vh;
+margin:0 auto;
+/* background:rgb(249, 255, 192); */
+position:relative;
+}
+.largeImg li{
+display:none;
+position:absolute;
+top:0;
+left: 0;
+
+}
+.largeImg li:first-child{display:block;}
+.largeImg li img{width:1200px; height: 650px;}
+
+.thumbs{
+position:absolute;
+bottom:30px;	
+left:0;	
+}
+.thumbs li{
+float:left;
+margin-right:10px;
+opacity:0.6;
+}
+.thumbs li:first-child{opacity:1;}
+.thumbs li a img{
+width:160px;
+height:80px;
+}
+
+
+.panel2 .content{
+  text-align:left;
+  margin-top:100px;
+}
+.panel2 h4{
+  font-size:24px;
+color:#826b51;
+font-weight:400;
+  
+}
+.panel2 h4 span{
+  display:block;
+  font-size:36px;
+font-weight:700;
+  margin-top:20px
+}
+.panel2 p{
+  font-size:18px;
+margin-top:60px;
+  line-height:30px;
+  color:#928676
+}
+.panel2 .btn{
+  float:right;
+width:150px;
+height:50px;
+line-height:50px;
+  text-align:center;
+background:#9f8771;
+color:#fff;
+  font-size:16px;
+  letter-spacing:3px;
+}
+
+
+
+
+
+
+
+
+/* ///////////////////////3. Games//////////////////////// */
+
+
+
+
+
+.games_menu_left{/*왼쪽 영역__________*/
+  width:50%;
+  height:0;
+  position:fixed;
+  left:0;
+  bottom:0;
+  z-index:800;
+  background:url(../image/games_bg1.png) no-repeat center center ;
+  background-size: cover;
+  display:flex;
+	justify-content:center; 
+	align-items:center; 
+}
+
+.games_menu_left .menu_left_content{
+  width:50%;
+  height:0;
+  position:fixed;
+  left:0;
+  bottom:0;
+  z-index:802;
+  background:url(../image/games_model1.png) no-repeat center center ;
+  background-size: cover;
+  display:flex;
+	justify-content:center; 
+	align-items:center; 
+  transition: all 0.3s;
+}
+
+.menu_left_content:hover{
+  transform: scale(1.1);
+}
+
+.menu_left_content a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+.games_menu_right{/*오른쪽 영역__________*/
+  width:50%;
+  height:0;
+  position:fixed;
+  right:0;
+  top:0;
+  z-index:800;
+  background:url(../image/games_bg2.png) no-repeat center center ;
+  background-size: cover; 
+  
+
+}
+.games_menu_right .menu_right_content{
+	width:50%;
+	height:0;
+  position:fixed;
+  left:50%;
+  top:0;
+  z-index:802;
+  background:url(../image/games_model2.png) no-repeat center center ;
+  background-size: cover;
+  display:flex;
+	justify-content:center; 
+	align-items:center;
+	transition: all 0.3s;
+}
+
+.menu_right_content:hover{
+  transform: scale(1.1);
+}
+
+.menu_right_content a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+/*2분할 뒤 WB로고*/
+
+#games_bg{ /*모든 모니터 해상도에 텍스트 수평수직 정가운데정렬*/		
+  position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+  display:flex;
+  flex-direction: column;
+	/* justify-content:center; */
+  align-items:center; /*주축이 바뀌었음*/
+}
+
+#games_bg img{
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////3-1. Video games//////////////////////// */
+
+section{
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+
+.vg_section_in{
+  width:1200px;
+  margin: 0 auto;
+  /* background-color: rgb(235, 223, 154); */
+}
+
+.backBtnSpace{
+  width: 1200px;
+  height:140px;
+  margin: 0 auto;
+  /* background-color: rgb(236, 213, 83); */
+  position: relative;
+
+}
+
+.backBtn{
+  width: 45px;
+  height: 45px;
+  background:url(../image/back.png) no-repeat center center ;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  margin-left: 20px;
+  transition: all 0.2s;
+}
+
+.backBtn:hover{
+  background:url(../image/backhover.png) no-repeat center center ;
+}
+
+.backBtn a{
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+
+
+.videoGames{
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  margin-right: 45px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* video Games 내용  */
+
+.vgBox{ /* 포스터 */
+  width: 1200px;
+  height: 700px;
+ /*  background-color: #f8c5f0; */
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  justify-content: center;
+}
+
+.vgBox1{ 
+  width: 40%;
+  height: 632px;
+  /* background-color: beige; */
+  
+}
+
+.vgBox1a{ /* 포스터- 배경 */
+  width: 100%;
+  height:100%;
+  /* background-color: rgb(250, 180, 133); */
+  /* : 5px; */
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.vgBox1a img{width: 100%;height:100%;}
+
+
+
+
+.gameModel{  /* 포스터- 모델 */
+  width: inherit;
+  height:inherit;
+  position: absolute;
+  z-index: 105;
+  top: 0;
+  left: 50px;
+  transition: all 0.5s;
+}
+.vgBox1:hover .gameModel{
+  
+  position: absolute;
+  z-index: 103;
+  top: 0;
+  left: 0;
+}
+
+
+.gameModel img{width: 100%; height:100%;}
+
+
+
+.vgLogoImg{  /* 포스터- 게임타이틀로고 */
+  width: inherit;
+  height:inherit;
+  position: absolute;
+  z-index: 105;
+  top: 0;
+  left: 450px;
+  transition: all 0.5s;
+}
+.vgBox1:hover .vgLogoImg{
+  
+  position: absolute;
+  z-index: 105;
+  top: 0;
+  left: 0;
+}
+
+
+.vgLogoImg img{width: 100%; height:100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vgBox2{
+  width: 565px;
+  height: 632px;
+  
+}
+
+
+.vgBox2a{
+  width: 565px;
+  height: 317px;
+  /* background-color: rgb(185, 235, 167); */
+  
+}
+
+
+
+
+.vgBox2b{
+  width: 100%;
+  height: 315px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  
+
+} 
+.vgImg{ /* 제이쿼리로 이거늘려야함 */
+  width: 50%;
+  height: 50%;
+  background-color: rgb(1, 1, 1);
+  cursor: pointer;
+}
+
+.vgImgClick{ 
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index:120;
+}
+
+
+
+.vgImg img{
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+}
+
+
+
+
+
+
+.xBtn{
+  position: absolute;
+  z-index: 150;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.vgBox4{
+  width: 155px;
+  height: 632px;
+  background-color: rgb(39, 39, 39);
+  position: relative;
+}
+.vgBox4 img{
+  width: 100%;
+  height:100%;
+}
+
+.vgName1{ /* 포스터- 게임이름 색깔별로 구분 */
+  position: absolute;
+  bottom:5px;
+  right:5px;
+  text-align: right;
+  z-index: 107;
+  font-size: 17px;
+  color: hsla(0, 0%, 100%, 0.684);
+  font-weight: 200;
+  font-family: 'Exo', sans-serif;
+}
+
+.vgName2{ 
+  position: absolute;
+  bottom:5px;
+  left: 5px;
+  z-index: 107;
+  font-size: 17px;
+  color: #000000;
+  font-weight: 200;
+  font-family: 'Exo', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*3-1슬라이드배너 */
+.vgBox3{
+  width:100%;
+  /* background-color: rgb(203, 133, 250);  */
+  margin-bottom: 20px;
+}
+
+
+.vgBanner{  /*배너전체영역*/
+	position:relative;
+	width:100%;
+	height:100%;
+	/*background:yellow;*/	 
+}
+
+.vgBanner .vgBan{   /*슬라이드영역*/
+	width:100%; 
+	height:100%;
+	overflow:hidden;
+	/*background:orange;	*/ 
+}
+
+.vgBanner .vgBan ul{
+	width:1785px;  /* 총길이=230*18+여백포함 */
+	position:relative;
+	left:-255px;  
+	
+}
+.vgBanner .vgBan ul li{
+	float:left;
+	margin-right:25px;
+	width:230px;   
+	height:111px;  
+}
+.vgBanner .vgBan ul li img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+  transition: all 0.3s;
+}
+.vgBanner .vgBan ul li:hover img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(100%);
+}
+
+
+
+
+/*좌우버튼*/
+.vgBan_left{
+	position:absolute;
+	
+	left:5px;
+	cursor:pointer;
+}
+.vgBan_right{
+	position:absolute;
+
+	right:5px;
+	cursor:pointer;
+}
+.vgBan_btn span{
+  position: absolute;
+  top:40%;
+	display:inline-block;
+	width:17px;
+	height:27px;	
+}
+.vgBan_btn .vgBan_left{background:url(../image/slide_left_sky.png) no-repeat; transition: all 0.2s;}
+.vgBan_btn .vgBan_right{background:url(../image/slide_right_sky.png) no-repeat; transition: all 0.2s;}
+.vgBan_btn .vgBan_left:hover{background:url(../image/slide_left_pink.png) no-repeat;}
+.vgBan_btn .vgBan_right:hover{background:url(../image/slide_right_pink.png) no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////// 4.Brands//////////////////////// */
+.brFullBg{
+  width: 100%;
+  height: 1040px;
+  position: relative;
+  overflow: hidden;
+}
+
+.brFullBg img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(20px) brightness(70%);
+}
+
+.br_section_in{
+  width:1200px;
+	height: 1040px;
+	margin:0 auto;
+  /* background-color: rgb(110, 86, 86); */
+  position: relative;
+}
+
+
+.br_section_in dl{  /*1번째 배경이미지->나머지는 jquery에서 불러냄*/
+	width:1200px;
+	height:1000px;
+	margin:0 auto;
+  position: absolute;
+  top:40px;
+  background:url(../image/brbg1.jpg) no-repeat center top;
+  /* background-color: rgb(68, 102, 188); */
+  overflow:hidden;
+}
+.br_section_in dl dt{  /*탭부분*/
+	position:relative;
+	width:60px;
+	height:1000px;
+  background:rgba(83, 83, 83, 0.6);
+  border-right:1px solid rgba(2555,255,255,0.6);
+  float:left;
+  box-sizing:border-box;
+  cursor:pointer;
+  padding-left:25px;
+}
+.br_section_in dl dt a{  
+    position:absolute;
+    top:30px;
+    color:#ccc;
+    font-size:15px;
+    padding-top:15px;
+    font-weight:normal;
+    writing-mode: vertical-rl;
+}
+dt.brSelected a{  /*제목선택시->jquery에서 불러냄*/
+	cursor:default;
+	color:#fff;
+}
+
+
+.br_section_in dl dd{   /*각 탭의 내용*/
+	width:720px;
+  height:inherit;
+	display:none;
+  float:left;
+  position:relative;
+  overflow:auto;
+    /*background:pink;*/
+}
+.br_section_in dl dd:first-of-type{display:block;}
+
+.brContent{padding:30px;}
+.brContent .title{
+    font-size:42px;
+    font-weight:normal;
+    text-transform:uppercase;
+    margin-bottom:25px;
+    color:#fff;
+}
+.brContent .description {
+    color:#fff;
+    font-size:16px;
+    line-height:20px;
+}
+.brContent .read-more{
+    font-size:14px;
+    text-transform:uppercase;
+    display:inline-block;
+    padding:8px 16px;
+    margin-top:20px;
+    border:1px solid rgba(2555,255,255,0.6);
+}
+.brContent .read-more a{color:#fff;}
+
+.brContent_list{
+  color:rgba(245, 245, 245, 0.875);
+  margin-top: 100px;
+  border: 1px solid rgba(245, 245, 245, 0.51);
+  padding: 10px;
+  width: 400px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+/* ////////////////////// 5.ex//////////////////////// */
+.ex_section_in1{
+  width: 1200px;
+  margin:0 auto;
+  /* background-color: beige; */
+  padding: 100px 0 20px 0;
+  
+}
+
+
+
+.ex_section_in1 h1{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+.ex_section_in2-1{
+  width: 100%;
+  height: 73vh;
+  /* background-color: #826b51; */
+  background: url(../image/exbg.jpg) no-repeat;
+}
+
+.ex_section_in2-2{
+  width: 1200px;
+  height: 100%;
+  margin:0 auto;
+  /* background-color: #b39675; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.ex_section_in2-2 .ex_icon{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.ex_icon a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.ex_icon a>img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(20%);
+  transition: all 0.3s;
+}
+
+
+
+/* 호버 */
+.ex_icon:hover a>img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(75%);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+.bold{
+  font-weight: bold;
+}
+
+.ex_icon .ex_icon_text{
+  position: absolute;
+  z-index: 100;
+  top: 60%;
+  left: 120px;
+  color:whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+}
+
+#exicon1{
+  width:50px;
+  height: 50px;
+  position: absolute;
+}
+#exicon2{
+  width:120px;
+  height: 50px;
+  position: absolute;
+}
+.ex_icon_text>span{
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////5-1 studio Tour/////////////// */
+
+
+#tour{
+  /* position: relative; */
+  width: 100%;
+}
+
+
+.tour_content{
+  width:1200px;
+  margin: 0 auto;
+  z-index: 400;
+  background-color: #4ebed4;
+  position: relative;
+}
+
+.tour_3btn{
+  
+  width: 120px;
+  height: 35px;
+  background-color: rgb(207, 221, 107);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 35px;
+  transition: all 0.2s;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tour_3btn:hover{
+  background-color: rgb(255, 200, 0);
+  width: 200px;
+  
+}
+
+.btn3_1{
+  position: absolute;
+  top:73vh;
+  right: 0;
+}
+.btn3_2{
+  position: absolute;
+  top:80vh;
+  right: 0;
+}
+.btn3_3{
+  position: absolute;
+  top:87vh;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* hollywood------------ */
+.tour_visual_in{
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(9, 9, 9);
+  position: relative; 
+}
+
+.tour_changeimg ul li{ 
+	display:none;  
+	position:absolute;
+	top:0;
+	left:0;
+  width: 100%;
+  height: 100%;
+}
+.tour_changeimg ul li:first-child{display:block;} 
+
+.tour_changeimg ul li img{
+  width:auto; 
+  height: 70vh;
+  filter: brightness(80%);
+}
+
+
+
+/*하단버튼*/
+.tour_visual .tour_list_btn{ 
+	position:absolute;
+	top:67vh; 
+	left:48%; 
+}
+
+.tour_visual .tour_list_btn ul li{  /* . . . 버튼 */
+	float:left;
+	width:8px; 
+	height:8px; 
+	border-radius:50%; 
+	background:rgba(255, 255, 255, 0.426);
+	margin:0 5px;
+	cursor:pointer;
+  transition: all 0.1s;
+}
+.tour_visual .tour_list_btn ul li.tour_active{background:#ffc80077;} 
+.tour_visual .tour_list_btn ul li img{width: 100%; height: 100%;}
+
+/*좌우버튼*/
+.tour_visual .tour_lbtn{  /* 이전버튼 */
+	position:absolute;
+	top:35vh;
+	left:20%;
+	width:65px;
+	height:65px;
+	background:url(../image/lbtn_off.png) no-repeat;
+  transition: all 0.2s;
+}
+.tour_visual .tour_lbtn:hover{background:url(../image/lbtn_on.png) no-repeat;}
+
+
+.tour_visual .tour_rbtn{  /* 다음버튼 */
+	position:absolute;
+	top:35vh;
+	right:20%;
+	width:65px;
+	height:65px;
+	background:url(../image/rbtn_off.png) no-repeat;
+  transition: all 0.2s;
+}
+.tour_visual .tour_rbtn:hover{background:url(../image/rbtn_on.png) no-repeat;}
+
+
+
+
+
+
+
+
+/* london------------ */
+
+.tour_changeimg2 ul li{ 
+	display:none;  
+	position:absolute;
+	top:0;
+	left:0;
+  width: 100%;
+  height: 100%;
+}
+.tour_changeimg2 ul li:first-child{display:block;} 
+
+.tour_changeimg2 ul li img{
+  width:auto; 
+  height: 70vh;
+  filter: brightness(80%);
+}
+
+
+
+/*하단버튼*/
+.tour_visual2 .tour_list_btn2{ 
+	position:absolute;
+	top:67vh; 
+	left:48%; 
+}
+
+.tour_visual2 .tour_list_btn2 ul li{  /* . . . 버튼 */
+	float:left;
+	width:8px; 
+	height:8px; 
+	border-radius:50%; 
+	background:rgba(255, 255, 255, 0.426);
+	margin:0 5px;
+	cursor:pointer;
+  transition: all 0.1s;
+}
+.tour_visual2 .tour_list_btn2 ul li.tour_active2{background:#ffc80077;} 
+.tour_visual2 .tour_list_btn2 ul li img{width: 100%; height: 100%;}
+
+/*좌우버튼*/
+.tour_visual2 .tour_lbtn2{  /* 이전버튼 */
+	position:absolute;
+	top:35vh;
+	left:20%;
+	width:65px;
+	height:65px;
+	background:url(../image/lbtn_off.png) no-repeat;
+  transition: all 0.2s;
+}
+.tour_visual2 .tour_lbtn2:hover{background:url(../image/lbtn_on.png) no-repeat;}
+
+
+.tour_visual2 .tour_rbtn2{  /* 다음버튼 */
+	position:absolute;
+	top:35vh;
+	right:20%;
+	width:65px;
+	height:65px;
+	background:url(../image/rbtn_off.png) no-repeat;
+  transition: all 0.2s;
+}
+.tour_visual2 .tour_rbtn2:hover{background:url(../image/rbtn_on.png) no-repeat;}
+
+
+
+
+
+
+
+
+/* tokyo------------ */
+
+
+.tour_changeimg3 ul li{ 
+	display:none;  
+	position:absolute;
+	top:0;
+	left:0;
+  width: 100%;
+  height: 100%;
+}
+.tour_changeimg3 ul li:first-child{display:block;} 
+
+.tour_changeimg3 ul li img{
+  width:auto; 
+  height: 70vh;
+  filter: brightness(80%);
+}
+
+
+
+/*하단버튼*/
+.tour_visual3 .tour_list_btn3{ 
+	position:absolute;
+	top:67vh; 
+	left:48%; 
+}
+
+.tour_visual3 .tour_list_btn3 ul li{  /* . . . 버튼 */
+	float:left;
+	width:8px; 
+	height:8px; 
+	border-radius:50%; 
+	background:rgba(255, 255, 255, 0.426);
+	margin:0 5px;
+	cursor:pointer;
+  transition: all 0.1s;
+}
+.tour_visual3 .tour_list_btn3 ul li.tour_active3{background:#ffc80077;} 
+.tour_visual3 .tour_list_btn3 ul li img{width: 100%; height: 100%;}
+
+/*좌우버튼*/
+.tour_visual3 .tour_lbtn3{  /* 이전버튼 */
+	position:absolute;
+	top:35vh;
+	left:20%;
+	width:65px;
+	height:65px;
+	background:url(../image/lbtn_off.png) no-repeat;
+  transition: all 0.2s;
+}
+.tour_visual3 .tour_lbtn3:hover{background:url(../image/lbtn_on.png) no-repeat;}
+
+
+.tour_visual3 .tour_rbtn3{  /* 다음버튼 */
+	position:absolute;
+	top:35vh;
+	right:20%;
+	width:65px;
+	height:65px;
+	background:url(../image/rbtn_off.png) no-repeat;
+  transition: all 0.2s;
+}
+.tour_visual3 .tour_rbtn3:hover{background:url(../image/rbtn_on.png) no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+/* 모든 tour 공통 content */
+.tour_title {
+  width: 1200px;
+  height: 28vh;
+  margin: 2vh auto;
+  text-align: center;
+}
+
+
+.tour_title h1{
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 40px;
+}
+
+.tour_title h2{
+  font-size: 45px;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 60px;
+}
+
+
+
+
+
+.tour_box1{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+
+.tour_box1_img{
+  width: 800px;
+  height: 150px;
+}
+.tour_box1_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.tour_box1_space{
+  width:400px;
+  height: 110px;
+  background-color:transparent;
+  border-bottom: 2px solid rgb(167, 167, 167);
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  position:relative;
+}
+
+.tour_box1_space span{
+  position: absolute;
+  bottom: 5px;
+  right:0;
+}
+
+
+
+.tour_box1_txt{
+  width:1200px;
+  background-color: transparent;
+  margin: 40px 0 120px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.tour_box1_txt p{
+  margin-bottom: 25px;
+}
+
+.tour_box1_txt_1{
+  font-weight: bold;
+  font-size: 21px;
+  color:#826b51;
+}
+.tour_time{
+  color:#5e5a37; 
+  font-weight: bold;
+  background-color: rgba(185, 185, 185, 0.144);
+  margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tour_box2{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+
+.tour_box2_img{
+  width: 800px;
+  height: 150px;
+}
+.tour_box2_img img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.tour_box2_space{
+  width:400px;
+  height: 110px;
+  background-color:transparent;
+  border-bottom: 2px solid rgb(167, 167, 167);
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  position:relative;
+}
+
+.tour_box2_space span{
+  position: absolute;
+  bottom: 5px;
+  left:0;
+}
+
+
+
+.tour_box2_txt{
+  width:1200px;
+  background-color: transparent;
+  margin: 40px 0 120px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.tour_box2_txt p{
+  margin-bottom: 25px;
+}
+
+
+
+

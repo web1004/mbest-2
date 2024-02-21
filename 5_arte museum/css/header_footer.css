@@ -1,0 +1,163 @@
+
+/* -----------------------------------
+                   header
+------------------------------------- */
+body{position: relative;}
+header{
+	width:100%;
+	background:transparent;
+	position:absolute;
+	z-index:1000;  /*비주얼보다 위에 올라오게 함*/
+}
+
+header h1{  /*로고*/
+	text-align:center;
+	padding:10px 15px;
+}  
+header h1 img{width:110px;}   /*로고 사이즈 줄임*/
+
+/*뒤배경 어둡게...*/
+.back{
+	display:none;
+	width:100%;
+	height:100%;
+	/*background:#000;
+	opacity:0.7;*/
+	background:rgba(0,0,0,0.6);
+	position:fixed;
+	left:0; 
+	top:0; 
+	z-index:1500;  /*헤더보다는 높아야하고, 메뉴보다다 낮아야 함*/
+}
+
+
+.menu_toggle_btn{   /*메뉴토글버튼*/
+	position:absolute;
+	width:30px;
+	height:23px;
+     left:15px; 
+	top:20px;
+	background:url(../image/gnbbtn_white.png) no-repeat;
+	cursor:pointer;
+}
+
+
+
+
+.gnb .gnb_list{	
+	position:fixed; 
+	left:0px; 
+	top:0px;
+	z-index:2000; 
+	width:60%; /*제이쿼리에서 움직이는 거리*/
+	height:100%;
+	background-color:rgba(0,0,0,0.9); 
+	/* border-right: 1px solid rgb(49, 49, 49); */
+	
+}
+.gnb .gnb_list li{
+	height:50px;
+	line-height:50px;
+  position: relative;
+}
+.gnb .gnb_list li:first-child{margin-top:70px;}
+
+.gnb_list li::before{  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.gnb_list li:not(:last-child):hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.gnb_list li::before{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgb(38, 57, 66);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.gnb .gnb_list li a{
+	display:block; 
+	font-size:16px; 
+	font-size:1.5rem; 
+	color:#fff; 
+	text-transform:capitalize;
+	text-align:center;
+  font-weight: 400;
+}
+.gnb .gnb_list li a:hover{color:#39c6e2}
+
+.gnb .gnb_list li.close{  /*닫기버튼*/
+	position:absolute; 
+	right:15px; 
+	top:15px; 
+	cursor:pointer;
+}
+
+
+
+.gnb .gnb_bar{
+	position: fixed;
+	
+	width: 60%;
+	height: 1px;
+	background-color: rgba(49,49,49);
+	z-index: 2000;
+	bottom:32vh;
+}
+
+.gnb_footer{
+	position: fixed;
+	width: 60%;
+	height: 30vh;
+	z-index: 2000;
+	bottom:0;
+	color: rgb(102, 102, 102);
+	/* background-color: gold; */
+}
+
+.footer_hours_address{
+	width: 80%;
+	height: 80px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	/* background-color: blue; */
+}
+
+.footer1{
+	width: 45%;
+	height: 100%;
+	/* background-color: red; */
+	text-align: center;
+	font-weight: normal;
+}
+
+.footer1 p:first-child{
+	font-weight: bold;
+	margin-bottom: 3px;
+	font-size: 17px;
+}
+
+
+.gnb_footer h4{
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 70px 0 10px;
+	font-weight: normal;
+}
+
+.gnb_footer h5{
+	letter-spacing: 1px;
+	font-size: 11px;
+	text-align: center;
+	font-weight: normal;
+	font-style: italic;
+}

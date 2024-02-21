@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body onload="main_load();">
+  <header>
+    <h1><a href="index.html"><img src="image/logo_white.png" alt="logo"></a></h1>
+    <span class="menu_toggle_btn"></span>
+
+    <nav class="gnb">
+      <ul class="gnb_list">
+        <li><a href="intro.html">intro</a></li>
+        <li><a href="exhibition.html">exhibition</a></li>
+        <li><a href="ticket.html">ticket</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="location.html">location</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li class="close"><a href="#"><img src="image/close_white.png" alt="close"></a></li>
+      </ul>
+      
+      <div class="gnb_footer">
+        <span class="gnb_bar"></span>
+        <div class="footer_hours_address">
+          <div class="footer1">
+            <p>Hours</p>
+            <p>연중무휴</p>
+            <p>10:00 - 20:00</p>
+            <p>(입장마감 19:00)</p>
+          </div>
+          <div class="footer1">
+            <p>Address</p>
+            <p>제주시 애월읍</p>
+            <p>어림비로 478</p>
+          </div>
+        </div>
+        <h4>artemuseum@dstrict.com</h4>
+        <h5>Copyright &copy; ARTE MUSEUM All Rights Reserved.</h5>
+      </div>
+      
+    </nav>
+    <div class="back"></div>
+    <!--메뉴뒤로 나오는 검정배경(opacity)-->
+  </header>
+  <div id="main_cell"><img src="image/main2.png" alt="main image"></div>
+
+  <div class="main_black"></div>
+
+  <div class="index_title">
+    <div class="ttest">
+      <h1>환상적인 빛의 공간</h1>
+      <h2>아르떼 뮤지엄</h2>
+      <h3>JEJU</h3>
+    </div>
+  </div>
+
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(image/vi01.png)"></div>
+      <div class="swiper-slide" style="background-image:url(image/vi02.png)"></div>
+      <div class="swiper-slide" style="background-image:url(image/vi03.png)"></div>
+      <div class="swiper-slide" style="background-image:url(image/vi04.png)"></div>
+      <div class="swiper-slide" style="background-image:url(image/vi05.png)"></div>
+      <div class="swiper-slide" style="background-image:url(image/vi06.png)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <!-- <div id="main_dot" class="swiper-pagination swiper-pagination-white"></div> -->
+    <!-- Add Arrows -->
+    <!-- <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div> -->
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 30,
+      effect: 'fade',
+      centeredSlides: true,
+      autoplay: 3000,
+      autoplayDisableOnInteraction: false,
+      slidesPerView: 1,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>

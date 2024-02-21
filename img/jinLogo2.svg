@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+  y="0px" viewBox="0 0 600 600" style="enable-background:new 0 0 600 600;" xml:space="preserve">
+  <style type="text/css">
+    .st0 {
+      display: none;
+      fill: #CA9BC5;
+    }
+
+
+    @keyframes dash-ani {
+        from { stroke-dashoffset: 1753;  }
+        to { stroke-dashoffset: 0; }
+    }
+
+      @keyframes dash-fade {
+        0%{stroke-dashoffset: 1753; opacity:1}
+        50%{opacity: 0.5}
+        100%{stroke-dashoffset: 0; opacity:0}
+    }
+
+    .st1 {
+      fill: none;
+      
+      stroke: #fff;
+			stroke-width:9;
+      stroke-miterlimit: 10;
+
+			animation: dash-fade 6s infinite;
+      stroke-dasharray:1753;
+      stroke-dashoffset: 0;
+      
+        
+    }
+
+
+		
+
+    .st2 {
+      fill: rgba(255, 255, 255, 0.39);
+    }
+
+    .st3 {
+      fill: none;
+      stroke: #fff;
+      stroke-width:14;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+    }
+
+    .st4 {
+      fill: none;
+      stroke: #010100;
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10;
+    }
+
+    .st5 {
+      fill: none;
+      stroke: #010100;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+    }
+
+    .st6 {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 14;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+    }
+
+    .st7 {
+      fill: none;
+      stroke: #010100;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+    }
+
+    .st8 {
+      fill: none;
+      stroke: #fff;
+      stroke-width:14;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10;
+    }
+
+    .st9 {
+      fill: #010100;
+      stroke: #010100;
+      stroke-miterlimit: 10;
+    }
+
+		.st10{
+			fill:transparent;
+		}
+
+
+		.layer1 {
+        animation: wave_ani1 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes wave_ani1 {
+        0% {
+          d: path("M 0,600 C 0,600 0,300 0,300 C 148.96428571428572,320.92857142857144 297.92857142857144,341.85714285714283 399,325 C 500.07142857142856,308.14285714285717 553.25,253.50000000000006 663,266 C 772.75,278.49999999999994 939.0714285714284,358.14285714285717 1078,375 C 1216.9285714285716,391.85714285714283 1328.4642857142858,345.92857142857144 1440,300 C 1440,300 1440,600 1440,600 Z");
+        }
+
+        25% {
+          d: path("M 0,600 C 0,600 0,300 0,300 C 156.67857142857144,339.0357142857143 313.3571428571429,378.07142857142856 423,360 C 532.6428571428571,341.92857142857144 595.2500000000001,266.75 705,258 C 814.7499999999999,249.24999999999997 971.6428571428571,306.9285714285714 1102,325 C 1232.357142857143,343.0714285714286 1336.1785714285716,321.53571428571433 1440,300 C 1440,300 1440,600 1440,600 Z");
+        }
+
+        50% {
+          d: path("M 0,600 C 0,600 0,300 0,300 C 120.03571428571428,303.7857142857143 240.07142857142856,307.57142857142856 354,283 C 467.92857142857144,258.42857142857144 575.7500000000001,205.5 699,225 C 822.2499999999999,244.5 960.9285714285713,336.42857142857144 1087,361 C 1213.0714285714287,385.57142857142856 1326.5357142857142,342.7857142857143 1440,300 C 1440,300 1440,600 1440,600 Z");
+        }
+
+        75% {
+          d: path("M 0,600 C 0,600 0,300 0,300 C 151.5,269.25 303,238.5 418,262 C 533,285.5 611.5,363.25 731,351 C 850.5,338.75 1011,236.5 1136,213 C 1261,189.5 1350.5,244.75 1440,300 C 1440,300 1440,600 1440,600 Z");
+        }
+
+        100% {
+          d: path("M 0,600 C 0,600 0,300 0,300 C 148.96428571428572,320.92857142857144 297.92857142857144,341.85714285714283 399,325 C 500.07142857142856,308.14285714285717 553.25,253.50000000000006 663,266 C 772.75,278.49999999999994 939.0714285714284,358.14285714285717 1078,375 C 1216.9285714285716,391.85714285714283 1328.4642857142858,345.92857142857144 1440,300 C 1440,300 1440,600 1440,600 Z");
+        }
+      }
+
+      
+
+
+  </style>
+	<defs>
+      <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
+        <feMorphology operator="dilate" radius="1" in="SourceAlpha" result="thicken" />
+        <feGaussianBlur in="thicken" stdDeviation="10" result="blurred" />
+
+        <!-- Change the colour -->
+        <feFlood flood-color="#fff" result="glowColor" />
+
+        <!-- Color in the glows -->
+        <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+
+        <!--	Layer the effects together -->
+        <feMerge>
+          <feMergeNode in="softGlow_colored"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+
+      </filter>
+
+       <linearGradient id="gradient" x1="0" x2="0" y1="1" y2="0">
+        <stop stop-color="rgba(255, 255, 255, 0.11)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 0.3)" offset="100%"></stop>
+       </linearGradient>
+
+      <mask id="mask-circle">
+        <circle class="st10" cx="300.21" cy="295.02" r="290" />
+      </mask>
+      <style>
+        #mask-circle circle {
+          fill: #fff;
+        }
+      </style> 
+
+       
+    </defs>
+
+
+
+
+
+
+	<circle class="st10" cx="300.21" cy="295.02" r="290" />
+	<g id="white_wave" mask="url(#mask-circle)">
+      <path
+        d="M 0,600 C 0,600 0,300 0,300 C 148.96428571428572,320.92857142857144 297.92857142857144,341.85714285714283 399,325 C 500.07142857142856,308.14285714285717 553.25,253.50000000000006 663,266 C 772.75,278.49999999999994 939.0714285714284,358.14285714285717 1078,375 C 1216.9285714285716,391.85714285714283 1328.4642857142858,345.92857142857144 1440,300 C 1440,300 1440,600 1440,600 Z"
+        stroke="none" stroke-width="0" fill="url(#gradient)"
+        class="transition-all duration-300 ease-in-out delay-150 layer1"></path>
+        
+    </g>
+  <circle class="st0" cx="300.21" cy="295.02" r="279.11" />
+  <circle class="st1" cx="300" cy="295.03" r="279.11" filter="url(#sofGlow)"/>
+  
+  <path class="st2"
+    d="M64.07,390.41c-28.06-1.14,110.79-140.83,386.79,59.76C437.66,469.63,226.65,563.64,64.07,390.41z" />
+  <g>
+    <path class="st3"
+      d="M57.84,379.96C5.11,316.74,36.37,66.26,320.05,331.19C553.76,549.46,544.2,211.98,543.63,211.41" />
+  </g>
+  <line class="st3" x1="498.17" y1="136.6" x2="517.5" y2="211.04" />
+  <line class="st3" x1="584.11" y1="139.17" x2="568.66" y2="210.22" />
+  <path class="st3" d="M508.43,176.12c2.22-1.49,38.19-18.91,67.64,0" />
+  <path class="st4" d="M407.59,491.44" />
+  <path class="st4" d="M307.71,445.96" />
+  <path class="st4" d="M201.47,316.36" />
+  <path class="st4" d="M148.04,322.57" />
+  <path class="st5" d="M181.56,491.44" />
+  <path class="st6" d="M103.6,366.78c0,0-12.11,122.79,220.18,120.4c232.29-2.39,259.62,181.63,22.76,21.3" />
+  <path class="st7" d="M175.22,348.75" />
+  <path class="st6" d="M176.59,352.6c5.01-2.49-56.9,76.76,160.9,116.51" />
+  <path class="st8"
+    d="M417.1,469.21c0,0-189.7-21.39-182.2-116.61c0,0,60.09,92.27,218.64,98.39c0,0-168.19-39.56-149.41-80.17" />
+  <path class="st9" d="M477.52,522" />
+  <path class="st5" d="M80.28,192.73" />
+  <path class="st6" d="M69.07,390.41c-0.98,1.88,15.57-31.62,88.72-37.81" />
+</svg>
